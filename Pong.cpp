@@ -15,7 +15,7 @@
 #include "Ball.h"
 #include "Blackhole.h"
 #include "AI.h"
-#include "Sounds.h"
+//#include "Sounds.h"
 
 using namespace std;
 
@@ -62,9 +62,9 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(500, 500), "Pong");
 
     //create audio
-    Sounds paddleSound("Paddle");//"beep-04.wav"
-    Sounds endSound("Finish"); //"tennis-ball-hit-02.wav"
-    Sounds goalSound("Goal");//"bicycle-bell-ring-01.wav"
+    //Sounds paddleSound("Paddle");//"beep-04.wav"
+    //Sounds endSound("Finish"); //"tennis-ball-hit-02.wav"
+    //Sounds goalSound("Goal");//"bicycle-bell-ring-01.wav"
     sf::SoundBuffer buf;
     //const string& sndName = fileName;
     if(!buf.loadFromFile("beep-04.wav")) return -1;
