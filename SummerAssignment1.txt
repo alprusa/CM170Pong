@@ -1,0 +1,45 @@
+C++/SFML Assignments
+
+Over the summer, I'll be assigning game development tasks for those students who
+want to improve their skills in C++ game development using SFML. Feel free to
+participate or not, as you wish (unless I've already indicated that you must do
+them).
+ 
+
+The first assignment is intended to get you to exercise your knowledge of C++,
+and get going with the SFML library.
+
+http://www.sfml-dev.org/
+ 
+
+The assignment is to re-implement the classic game of Pong using C++ and SFML.
+This game of Pong must:
+
+* have a scoreboard
+* be able to restart once one player wins
+* make a sound when the ball hits the paddle, and a different sound when the ball
+ leaves the playfield
+* have different angles of reflection depending on where the ball hits the
+ paddle, as in the original.
+
+
+I'd also like you to pick a non-standard feature, and add that to the game.
+Examples are:
+
+* multiple paddles for each player
+* a gravity black hole in the middle of the playfield
+* creature in the middle that will eat the ball
+etc.
+
+Once you're done, make a gameplay video and post it on Youtube, and make a
+GitHub account and upload your code to GitHub. Post final YouTube link and
+GitHub links in the comments/feedback below this post.
+
+Note that there is an example Pong game in the SFML distribution. You are free
+to look at this, but I would really like people to implement this game from
+scratch, since the goal is to develop proficiency with C++ and SFML.
+
+You should aim for completing this assignment by July 19.
+
+Make it so players battle it out with top and bottom action so one player uses
+	wasd and other uses lrud arrows net goes vertical and horizontal
