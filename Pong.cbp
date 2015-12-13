@@ -54,6 +54,8 @@
 		<Unit filename="Pong.cpp" />
 		<Unit filename="Sounds.cpp" />
 		<Unit filename="Sounds.h" />
+		<Unit filename="Utilities.cpp" />
+		<Unit filename="Utilities.h" />
 		<Unit filename="beep-04.wav" />
 		<Unit filename="bicycle-bell-ring-01.wav" />
 		<Unit filename="tennis-ball-hit-02.wav" />

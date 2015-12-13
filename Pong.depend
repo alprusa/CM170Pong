@@ -4,7 +4,7 @@
 	<SFML/Audio/SoundBuffer.hpp>
 	<SFML/Audio/Sound.hpp>
 
-1439529470 source:/home/aprusa/Documents/Pong/Pong/AI.cpp
+1450005735 source:/home/aprusa/Documents/Pong/Pong/AI.cpp
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -12,7 +12,7 @@
 	"Ball.h"
 	"AI.h"
 
-1439526242 /home/aprusa/Documents/Pong/Pong/Paddle.h
+1450005995 /home/aprusa/Documents/Pong/Pong/Paddle.h
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -24,7 +24,7 @@
 	<iostream>
 	"Paddle.h"
 
-1439695660 /home/aprusa/Documents/Pong/Pong/AI.h
+1450004914 /home/aprusa/Documents/Pong/Pong/AI.h
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	"Paddle.h"
@@ -60,7 +60,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1439692022 source:/home/aprusa/Documents/Pong/Pong/Paddle.cpp
+1450005992 source:/home/aprusa/Documents/Pong/Pong/Paddle.cpp
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -70,7 +70,7 @@
 	<vector>
 	"Paddle.h"
 
-1439701530 source:/home/aprusa/Documents/Pong/Pong/Pong.cpp
+1450006406 source:/home/aprusa/Documents/Pong/Pong/Pong.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -81,6 +81,7 @@
 	"Ball.h"
 	"Blackhole.h"
 	"AI.h"
+	"Utilities.h"
 	"Sounds.h"
 
 1439701840 /home/aprusa/Documents/Pong/Pong/include/Sounds.h
@@ -90,4 +91,24 @@
 	"Sounds.h"
 	<SFML/Audio.hpp>
 	<iostream>
+
+1449892181 source:/home/aprusa/Documents/Pong/Pong/Sounds.cpp
+	"Sounds.h"
+	<SFML/Audio.hpp>
+	<iostream>
+
+1449891894 /home/aprusa/Documents/Pong/Pong/Sounds.h
+	<SFML/Audio.hpp>
+
+1450002484 /home/aprusa/Documents/Pong/Pong/Utilities.h
+	<SFML/Window.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<fstream>
+	<vector>
+	"Ball.h"
+	"Paddle.h"
+
+1450002496 source:/home/aprusa/Documents/Pong/Pong/Utilities.cpp
+	"Utilities.h"
 

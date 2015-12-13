@@ -25,7 +25,8 @@ class paddle{
         paddle(int xPos, int yPos, string orientation);
         void buildText(sf::RenderWindow& window, int xPos, int yPos);
         void changeScore(int change);
-        void changeDirections(string direction, int windowWidth, int windowHeight);
+        void changeDirections(int playerNum, int windowWidth, int windowHeight, bool horizontalPaddle);
+        void changePaddlePosition(int xPos, int yPos);
 
         sf::RectangleShape getPaddleShape();
         sf::Text getText(){return scoreText;}
@@ -36,7 +37,8 @@ class paddle{
         int getHeight(){return height;}
         int getTextX(){return textX;}
         int getTextY(){return textY;}
-        
+        float getVelocity(){return velocity;}
+
         ~paddle(){}
 };
 

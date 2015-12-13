@@ -9,9 +9,10 @@ class Sounds
 {
     private:
         string fileName;
+        sf::Music sndAudio;
     public:
         Sounds(string snd);
-        void playSound();
+        sf::Music& getSound();
         ~Sounds(){}
 };
 

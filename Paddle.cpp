@@ -44,20 +44,60 @@ void paddle::changeScore(int change){
 }
 
 sf::RectangleShape paddle::getPaddleShape(){
-    paddleShape.setPosition(x, y);
     return paddleShape;
 }
 
-
 //Change the direction of the y mouse
-void paddle::changeDirections(string direction, int windowWidth, int windowHeight){
-    if(direction == "up" && y > 5)
-        y -= velocity;
-    else if(direction == "down" && y < (windowHeight - 55))
-        y += velocity;
+//case 0 is for player one using WASD
+//case 1 of switch statement si for player using arrow keys
+void paddle::changeDirections(int playerNum, int windowWidth, int windowHeight, bool horizontalPaddle){
+    int minY = 5;
+    int maxY = (windowHeight - 55);
+    int minX = 40;
+    int maxX = (windowWidth - 95);
 
-    if(direction == "left" && x > 40)
-        x -= velocity;
-    else if(direction == "right" && x < (windowWidth - 95))
-        x += velocity;
+    switch(playerNum){
+        case 0:
+            //move up if the player has not reached the top of the screen and they are pressing W
+            if(!horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::W) && y > minY)
+                y -= velocity;
+
+            //move down if player has not reached the bottom of the window and they are pressing S
+            if(!horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::S) && y < maxY)
+                y += velocity;
+
+            //move left if player has not reached the left of the window and they are pressing A
+            if(horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::A) && x > minX)
+                x -= velocity;
+
+            //move right if player has not reached the right of the window and they are pressing D
+            if(horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::D) && x < maxX)
+                x += velocity;
+            break;
+        case 1:
+            //move up if the player has not reached the top of the screen and they are pressing up arrow
+            if(!horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && y > minY)
+                y -= velocity;
+
+            //move down if player has not reached the bottom of the window and they are pressing down arrow
+            if(!horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && y < maxY)
+                y += velocity;
+
+            //move left if player has not reached the left of the window and they are pressing left arrow
+            if(horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && x > minX)
+                x -= velocity;
+
+             //move right if player has not reached the right of the window and they are pressing right arrow
+            if(horizontalPaddle && sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && x < maxX)
+                x += velocity;
+            break;
+    }
+
+    paddleShape.setPosition(x, y);
+}
+
+void paddle::changePaddlePosition(int xPos, int yPos){
+    x = xPos;
+    y = yPos;
+    paddleShape.setPosition(xPos, yPos);
 }
